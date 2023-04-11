@@ -13,6 +13,6 @@
         android:right="5dp"
         android:top="5dp"></padding>
 
-    <solid android:color="#241332" />
+    <solid android:color="#2596be" />
 
 </shape>

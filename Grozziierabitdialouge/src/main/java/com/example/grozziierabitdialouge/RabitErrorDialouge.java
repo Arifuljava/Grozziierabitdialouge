@@ -19,7 +19,7 @@ import androidx.annotation.NonNull;
 
 import com.codesgood.views.JustifiedTextView;
 
-public class RabitSuccesDialouge extends Dialog {
+public class RabitErrorDialouge extends Dialog {
     Context context;
     Animation imageanimation;
     int flag=1;
@@ -36,7 +36,7 @@ public class RabitSuccesDialouge extends Dialog {
     ImageView deviceanimation__1;
 
 
-    public RabitSuccesDialouge(@NonNull Context context) {
+    public RabitErrorDialouge(@NonNull Context context) {
 
         super(context);
         this.context=context;
@@ -47,7 +47,7 @@ public class RabitSuccesDialouge extends Dialog {
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.successdialouge);
+        setContentView(R.layout.defaultdialougedesign);
         imageanimation= AnimationUtils.loadAnimation(context,R.anim.splash_top_animation);
         deviceanimation__1=(ImageView)findViewById(R.id.deviceanimation__1);
         deviceanimation__1.setAnimation(imageanimation);
@@ -76,60 +76,60 @@ public class RabitSuccesDialouge extends Dialog {
         nobutton.setText("Cancel");
         yesbutton.setText("Exit");
     }
-    public RabitSuccesDialouge setTitle(String titleText) {
+    public RabitErrorDialouge setTitle(String titleText) {
         textdet.setVisibility(View.VISIBLE);
         textdet.setText(titleText);
         return this;
     }
-    public RabitSuccesDialouge setTitleColor(int color) {
+    public RabitErrorDialouge setTitleColor(int color) {
         textdet.setVisibility(View.VISIBLE);
         textdet.setTextColor(color);
         return this;
     }
 
 
-    public RabitSuccesDialouge isCancelable(boolean cancelable){
+    public RabitErrorDialouge isCancelable(boolean cancelable){
         this.setCancelable(cancelable);
         return this;
     }
-    public RabitSuccesDialouge setIcon(int  image)
+    public RabitErrorDialouge setIcon(int  image)
     {
         deviceanimation__1.setVisibility(View.VISIBLE);
         deviceanimation__1.setImageResource(image);
         return  this;
     }
-    public RabitSuccesDialouge setMessage(String message) {
+    public RabitErrorDialouge setMessage(String message) {
         justift.setVisibility(View.VISIBLE);
         justift.setText(message);
         return  this;
     }
 
-    public RabitSuccesDialouge setSubtitleColor(int color)
+    public RabitErrorDialouge setSubtitleColor(int color)
     {
         justift.setVisibility(View.VISIBLE);
         justift.setTextColor(color);
         return this;
     }
-    public RabitSuccesDialouge yesbuttonText(String text)
+    public RabitErrorDialouge yesbuttonText(String text)
     {
         yesbutton.setVisibility(View.VISIBLE);
         yesbutton.setText(text);
         return this;
     }
-    public RabitSuccesDialouge nobuttonText(String text)
+    public RabitErrorDialouge nobuttonText(String text)
     {
         nobutton.setVisibility(View.VISIBLE);
         nobutton.setText(text);
         return this;
     }
-    public RabitSuccesDialouge yesbuttonTextColor(int color)
+    public RabitErrorDialouge yesbuttonTextColor(int color)
     {
         yesbutton.setVisibility(View.VISIBLE);
         Drawable backgroud=yesbutton.getBackground();
         changingBackgroundColor(backgroud,color);
         return this;
     }
-    public RabitSuccesDialouge nobuttonTextColor(int color)
+    public RabitErrorDialouge nobuttonTextColor(int color)
     {
         nobutton.setVisibility(View.VISIBLE);
         Drawable drawable=nobutton.getBackground();
@@ -151,21 +151,21 @@ public class RabitSuccesDialouge extends Dialog {
             colorDrawable.setColor(color);
         }
     }
-    public RabitSuccesDialouge setyesbuttonClicklistener(String message, View.OnClickListener configlistener)
+    public RabitErrorDialouge setyesbuttonClicklistener(String message, View.OnClickListener configlistener)
     {
         yesbutton.setVisibility(View.VISIBLE);
         yesbutton.setText(message);
         yesbutton.setOnClickListener(configlistener);
         return this;
     }
-    public RabitSuccesDialouge setnobuttonClicklisener(String message, View.OnClickListener configlistener)
+    public RabitErrorDialouge setnobuttonClicklisener(String message, View.OnClickListener configlistener)
     {
         nobutton.setVisibility(View.VISIBLE);
         nobutton.setText(message);
         nobutton.setOnClickListener(configlistener);
         return this;
     }
-    public RabitSuccesDialouge closeOnclicklistener(View.OnClickListener configlistener)
+    public RabitErrorDialouge closeOnclicklistener(View.OnClickListener configlistener)
     {
         clclc.setVisibility(View.VISIBLE);
         clclc.setOnClickListener(configlistener);
