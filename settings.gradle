@@ -1,0 +1,3 @@
+include ':Grozziierabitdialouge'
+include ':app'
+rootProject.name = "GrozziieRabitDialouge"
