@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#FF0000"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="3dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.Toolbar
+                        android:background="#bdc3c7"
+                        android:id="@+id/profile_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <RelativeLayout
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Something is error"
+                                android:maxLength="25"
+                                android:maxLines="1"
+                                android:id="@+id/textdet"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/zxing_viewfinder_laser"
+                                android:layout_marginRight="39dp"
+                                ></TextView>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/cancel"
+                    android:padding="-5dp"
+                    android:elevation="-5dp"
+                    android:id="@+id/cancel_button"
+
+
+                    android:layout_gravity="left"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginRight="7.5dp"
+                    ></ImageView>
+
+
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.Toolbar>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+      android:src="@drawable/rabit_saddi"
+        android:layout_width="50dp"
+        android:id="@+id/deviceanimation__1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="false"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+
+        android:layout_gravity="center" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/deviceanimation__1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    >
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="5"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:text="Testing error."
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </ScrollView>
+        </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <Button
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/button_yes"
+                                        android:text="Got It"
+                                        android:textAllCaps="false"
+                                        android:textSize="12dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:textColor="@color/zxing_viewfinder_laser"
+
+                                        >
+
+                                    </Button>
+                                    <Button
+                                        android:textAllCaps="false"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:text="Close"
+                                        android:textSize="12dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:textColor="@color/zxing_viewfinder_laser"
+                                        android:background="@drawable/button_no"
+                                        >
+
+                                    </Button>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

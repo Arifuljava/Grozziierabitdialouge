@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/interior_layout"
+    >
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView"
+        android:visibility="gone"></ImageView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/lottie"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        ></com.airbnb.lottie.LottieAnimationView>
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@android:color/holo_red_dark"
+        android:visibility="gone"
+
+        ></ProgressBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/avenir_bold"
+        android:text="Hello"
+        android:layout_gravity="center_horizontal"
+
+
+        >
+
+    </TextView>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
